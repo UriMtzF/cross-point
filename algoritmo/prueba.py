@@ -52,7 +52,7 @@ def mutacion(individuo, tasa_mutacion=0.1):
 def generar_poblacion_y_cruzar():
     # Parámetros
     bounds = [-10, 10]
-    pop_size = 2
+    pop_size = 4
     bits = 5
 
     # Generar población inicial

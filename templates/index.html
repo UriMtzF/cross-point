@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Evolución diferencial</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/normalize.css') }}">
+    </head>
+    <body>
+        <header>
+            <h1>Evolución Diferencial</h1>
+        </header>
+
+        <div class="container">
+
+            <div class="start-button">
+                <button id="start">INICIAR</button>
+            </div>
+
+            <div class="population-display">
+                <textarea id="population-text" placeholder="Text area donde muestre la población generada" readonly></textarea>
+            </div>
+
+            <div class="process-table">
+                <table id="process-table">
+                    <thead>
+                        <tr>
+                            <th>Generación</th>
+                            <th>Maximizar</th>
+                            <th>Fitness maximizar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Las nuevas filas se agregarán aquí -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </body>
+</html>
